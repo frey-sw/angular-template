@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/naming-convention
-import { APP_ROUTES } from '@aft-core';
+import { APP_ROUTES } from '@app-core';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 export const PUBLIC_MODULE_ROUTES = {

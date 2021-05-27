@@ -2,9 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@aft-core": [ "projects/aft-core/src/public-api.ts" ],
-      "@aft-core-assets/*": [
-        "projects/aft-core/src/assets/*"
+      "@app-core": [ "projects/app-core/src/public-api.ts" ],
+      "@app-core-assets/*": [
+        "projects/app-core/src/assets/*"
       ],
 
       "@sw-ui-components": [

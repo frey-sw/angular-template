@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router } from '@angular/router';
 
-import { AuthService, ILoginRequest, MessagingService, SharedTestModule } from '@aft-core';
+import { AuthService, ILoginRequest, MessagingService, SharedTestModule } from '@app-core';
 
 import { LoginComponent } from './login.component';
 

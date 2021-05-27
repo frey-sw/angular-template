@@ -1,11 +1,18 @@
 {
   "extends": "../../.eslintrc.json",
-  "ignorePatterns": ["!**/*"],
+  "ignorePatterns": [
+    "!**/*"
+  ],
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "parserOptions": {
-        "project": ["./tsconfig.app.json", "./tsconfig.spec.json"],
+        "project": [
+          "./tsconfig.lib.json",
+          "./tsconfig.spec.json"
+        ],
         "createDefaultProgram": true
       },
       "rules": {
@@ -13,7 +20,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "app-back",
+            "prefix": "app-core",
             "style": "camelCase"
           }
         ],
@@ -21,14 +28,16 @@
           "error",
           {
             "type": "element",
-            "prefix": "app-back",
+            "prefix": "app-core",
             "style": "kebab-case"
           }
         ]
       }
     },
     {
-      "files": ["*.html"],
+      "files": [
+        "*.html"
+      ],
       "rules": {}
     }
   ]

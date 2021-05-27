@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import { PrivateGuard, PublicGuard } from '@aft-core';
+import { PrivateGuard, PublicGuard } from '@app-core';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [

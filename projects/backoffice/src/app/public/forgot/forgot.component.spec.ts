@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedTestModule } from '@aft-core';
+import { SharedTestModule } from '@app-core';
 import { Router } from '@angular/router';
 import { generateFullPublicModuleRoute, PUBLIC_MODULE_ROUTES } from '../public.routes';
 import { ForgotComponent } from './forgot.component';

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService, MessagingService } from '@aft-core';
+import { AuthService, MessagingService } from '@app-core';
 import { generateFullPublicModuleRoute, PUBLIC_MODULE_ROUTES } from '../public.routes';
 
 @Component({
-  selector: 'aft-admin-login',
+  selector: 'app-back-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })

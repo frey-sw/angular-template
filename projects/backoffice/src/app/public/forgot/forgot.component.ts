@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '@aft-core';
+import { AuthService } from '@app-core';
 import { generateFullPublicModuleRoute, PUBLIC_MODULE_ROUTES } from '../public.routes';
 
 @Component({
-  selector: 'aft-admin-forgot',
+  selector: 'app-back-forgot',
   templateUrl: './forgot.component.html',
   styleUrls: ['./forgot.component.scss'],
 })

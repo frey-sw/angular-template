@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedTestModule } from '@aft-core';
+import { SharedTestModule } from '@app-core';
 import { PublicLayoutComponent } from './public-layout.component';
 import { PublicFooterComponent } from './public-footer/public-footer.component';
 

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { AuthService } from '@aft-core';
+import { AuthService } from '@app-core';
 
 @Component({
-  selector: 'aft-admin-root',
+  selector: 'app-back-root',
   template: '<router-outlet></router-outlet><sw-overlay-elements></sw-overlay-elements>',
 })
 export class InitComponent implements OnInit {

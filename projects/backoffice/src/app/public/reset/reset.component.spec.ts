@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AuthService, IResetRequest, MessagingService, SharedTestModule } from '@aft-core';
+import { AuthService, IResetRequest, MessagingService, SharedTestModule } from '@app-core';
 
 import { ResetComponent } from './reset.component';
 import { PublicModule } from '../public.module';

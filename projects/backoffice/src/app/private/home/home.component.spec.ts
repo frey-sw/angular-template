@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
+
+import { AuthService, SharedTestModule } from '@app-core';
 
 import { HomeComponent } from './home.component';
-import { AuthService, SharedTestModule } from '@aft-core';
-import { generateFullPublicModuleRoute, PUBLIC_MODULE_ROUTES } from '../../public/public.routes';
-import { Router } from '@angular/router';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;

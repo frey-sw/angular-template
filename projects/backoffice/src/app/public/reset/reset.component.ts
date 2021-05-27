@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
-import { APP_ROUTES, AuthService, MessagingService } from '@aft-core';
+import { APP_ROUTES, AuthService, MessagingService } from '@app-core';
 
 @Component({
-  selector: 'aft-admin-reset',
+  selector: 'app-back-reset',
   templateUrl: './reset.component.html',
   styleUrls: ['./reset.component.scss'],
 })

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'aft-admin-public-layout',
+  selector: 'app-back-public-layout',
   templateUrl: './public-layout.component.html',
   styleUrls: ['./public-layout.component.scss'],
 })

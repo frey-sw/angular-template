@@ -1,24 +1,16 @@
 {
-  "name": "after-90-workspace",
+  "name": "app-workspace",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
 
     "prestart-backoffice": "yarn install",
-    "prestart-scouting": "yarn install",
-    "prestart-player": "yarn install",
 
     "start-backoffice": "ng serve backoffice",
-    "start-scouting": "ng serve scouting-portal",
-    "start-player": "ng serve player-portal",
 
     "build-backoffice": "ng build backoffice",
-    "build-scouting": "ng build scouting-portal",
-    "build-player": "ng build player-portal",
 
     "test-backoffice": "ng test backoffice",
-    "test-scouting": "ng test scouting-portal",
-    "test-player": "ng test player-portal",
 
     "lint": "ng lint --force",
 

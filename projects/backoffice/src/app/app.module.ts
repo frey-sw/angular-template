@@ -6,7 +6,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { UiComponentsModule } from '@sw-ui-components';
 
-import { AftCoreModule, IAppFileConfig, PrivateGuard, PublicGuard } from '@aft-core';
+import { AppCoreModule, IAppFileConfig, PrivateGuard, PublicGuard } from '@app-core';
 import { AppRoutingModule } from './app-routing.module';
 import { InitComponent } from './init.component';
 import { environment } from '../environments/environment';
@@ -26,7 +26,7 @@ const appConfigServiceConfig: IAppFileConfig = {
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AftCoreModule.forRoot(appConfigServiceConfig),
+    AppCoreModule.forRoot(appConfigServiceConfig),
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

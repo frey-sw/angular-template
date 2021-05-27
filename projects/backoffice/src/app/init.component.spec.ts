@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { AuthService, SharedTestModule } from '@aft-core';
+import { AuthService, SharedTestModule } from '@app-core';
 
 import { InitComponent } from './init.component';
 import { TranslateModule } from '@ngx-translate/core';

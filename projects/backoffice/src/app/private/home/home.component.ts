@@ -1,10 +1,12 @@
-import { AuthService } from '@aft-core';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
+import { AuthService } from '@app-core';
+
 import { generateFullPrivateModuleRoute, PRIVATE_MODULE_ROUTES } from '../private.routes';
 
 @Component({
-  selector: 'aft-admin-home',
+  selector: 'app-back-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })

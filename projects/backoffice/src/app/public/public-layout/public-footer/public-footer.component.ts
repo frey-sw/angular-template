@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'aft-admin-public-footer',
+  selector: 'app-back-public-footer',
   templateUrl: './public-footer.component.html',
   styleUrls: ['./public-footer.component.scss'],
 })
