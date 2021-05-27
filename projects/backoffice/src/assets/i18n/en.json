@@ -1,0 +1,98 @@
+{
+  "GENERAL": {
+    "AFTER90": "After 90",
+    "CREATE": "Create",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "SAVE": "Save",
+    "BACK": "Back",
+    "CANCEL": "Cancel",
+    "TITLES": {
+      "SUCCESS": "Success",
+      "INFO": "Info",
+      "WARNING": "Warning",
+      "ERROR": "Error"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "Log in",
+    "EMAIL": "Email",
+    "SUBMIT_BUTTON": "Log in",
+    "PASSWORD": "Password",
+    "REMEMBER_ME": "Remember me",
+    "FORGOT_PASSWORD": "Forgot password?",
+    "EXAMPLE": "example@address.com",
+    "EMAIL_REQUIRED": "Email is required.",
+    "EMAIL_WRONG_FORMAT": "Invalid email format.",
+    "PASSWORD_REQUIRED": "Password is required.",
+    "TOAST": {
+      "INFO": {
+        "TITLE": "Invalid Data",
+        "MESSAGE": "Please, fix the fields marked with errors before log in."
+      },
+      "ERROR": {
+        "TITLE": "Log in failed",
+        "MESSAGE": "Invalid email/password, please try again."
+      },
+      "EMPTY": {
+        "TITLE": "Incorrect data",
+        "MESSAGE": "To continue, please insert Email and Password"
+      }
+    }
+  },
+  "FORGOT": {
+    "TITLE": "Forgot Password",
+    "EMAIL": "Email",
+    "SEND_EMAIL": "Send email",
+    "LOGIN": "Back to Login",
+    "EXAMPLE": "example@address.com",
+    "EMAIL_REQUIRED": "Email is required.",
+    "EMAIL_WRONG_FORMAT": "Invalid email format.",
+    "TOAST": {
+      "INFO": {
+        "TITLE": "Invalid Data",
+        "MESSAGE": "Please, fix the fields marked with errors before log in."
+      },
+      "ERROR": {
+        "TITLE": "Send email failed",
+        "MESSAGE": "Invalid email, please try again."
+      },
+      "SUCCESS": {
+        "TITLE": "Email successfully sent",
+        "MESSAGE": "Check your inbox for further instructions."
+      }
+    }
+  },
+  "RESET": {
+    "TITLE": "Reset your password",
+    "NEW_PASSWORD": "New password",
+    "NEW_PASSWORD_REPEAT": "Repeat new password",
+    "SUBMIT_BUTTON": "Change password",
+    "NEW_PASSWORD_REQUIRED": "New password is required",
+    "NEW_PASSWORD_REPEAT_REQUIRED": "Repeat new password is required",
+    "TOAST": {
+      "PASSWORD_ERROR": {
+        "TITLE": "Passwords don't match",
+        "MESSAGE": "New password and repeat password are different."
+      },
+      "ERROR": {
+        "TITLE": "Error resetting password",
+        "MESSAGE": "There was an error while resetting your password, try again."
+      },
+      "REQUIRED_ERROR": {
+        "TITLE": "Incorrect data",
+        "MESSAGE": "To continue, please enter password and repeat password."
+      }
+    }
+  },
+  "FOOTER": {
+    "POWERED_BY": "Powered by",
+    "COPYRIGHT": "© 2021 After 90. All rights reserved.",
+    "HOME": "Home",
+    "HELP": "Help center",
+    "TERMS": "Terms",
+    "PRIVACY": "Privacy",
+    "STATUS": "Service status",
+    "CONTACT": "Contact"
+  }
+}

@@ -1,0 +1,84 @@
+<div class="bkgCont" style="background-image: url('assets/images/pictures/authBkg_desktop.jpg')">
+  <img class="environmentLabel" alt="" src="assets/images/environmentLabels/environment_label.png" />
+
+  <main class="card authCard">
+    <h1 class="cardHead">
+      <!-- <img src="" alt="After90_logo" class="authCardLogo" /> -->
+    </h1>
+    <form [formGroup]="form" class="cardBody" (ngSubmit)="onSubmit()">
+      <h2 class="cardTitle">{{ 'RESET.TITLE' | translate }}</h2>
+
+      <div class="alert alert_danger marginBottom_2" style="display: none">
+        <i class="mdi mdi-close-octagon alert__icon"></i>
+        <div>
+          <h3 class="alert__title">Invalid email/password</h3>
+          <p class="alert__text">Please check your credentials and try again.</p>
+        </div>
+      </div>
+      <div class="inputCont">
+        <label for="resetPassword" class="label">{{ 'RESET.NEW_PASSWORD' | translate }}</label>
+        <div class="inputIconCont">
+          <input
+            (blur)="onBlur('password')"
+            formControlName="password"
+            type="password"
+            pPassword
+            placeholder="{{ 'RESET.NEW_PASSWORD' | translate }}"
+            id="resetPassword"
+            class="inputIconField"
+            [showPassword]="showPassword"
+            [feedback]="false"
+            aria-describedby="loginPassword_errorMsg"
+          />
+          <button type="button" class="inputIconBtn" (click)="showPassword = !showPassword" title="Show/hide password">
+            <i class="mdi" [class]="showPassword ? 'mdi-eye-off' : 'mdi-eye'"></i>
+          </button>
+        </div>
+        <small *ngIf="passCtrl?.invalid && (passCtrl?.dirty || passCtrl?.touched)" id="loginPassword_errorMsg" class="p-error">
+          <span *ngIf="passCtrl?.hasError('required')">{{ 'RESET.NEW_PASSWORD_REQUIRED' | translate }}</span>
+        </small>
+      </div>
+      <div class="inputCont">
+        <label for="resetConfirmPassword" class="label">{{ 'RESET.NEW_PASSWORD_REPEAT' | translate }}</label>
+        <div class="inputIconCont">
+          <input
+            (blur)="onBlur('confirmPassword')"
+            formControlName="confirmPassword"
+            type="password"
+            pPassword
+            placeholder="{{ 'RESET.NEW_PASSWORD_REPEAT' | translate }}"
+            id="resetPasswordCofirm"
+            class="inputIconField"
+            [showPassword]="showConfirmPassword"
+            [feedback]="false"
+            aria-describedby="loginPassword_errorMsg"
+          />
+          <button
+            type="button"
+            class="inputIconBtn"
+            (click)="showConfirmPassword = !showConfirmPassword"
+            title="Show/hide password"
+          >
+            <i class="mdi" [class]="showConfirmPassword ? 'mdi-eye-off' : 'mdi-eye'"></i>
+          </button>
+        </div>
+        <small
+          *ngIf="passConfirmCtrl?.invalid && (passConfirmCtrl?.dirty || passConfirmCtrl?.touched)"
+          id="loginPassword_errorMsg"
+          class="p-error"
+        >
+          <span *ngIf="passConfirmCtrl?.hasError('required')">{{ 'RESET.NEW_PASSWORD_REPEAT_REQUIRED' | translate }}</span>
+        </small>
+      </div>
+      <div>
+        <button id="submitBtn" name="submit" type="submit" class="button button_big button_block">
+          {{ 'RESET.SUBMIT_BUTTON' | translate }}
+        </button>
+      </div>
+    </form>
+  </main>
+  <div class="powered_by_label">
+    <span>Powered by</span>
+    <img class="" alt="powered by After90" src="assets/images/logos/After90_logo_sm.png" />
+  </div>
+</div>

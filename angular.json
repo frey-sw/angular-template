@@ -1,0 +1,491 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "backoffice": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/backoffice",
+      "sourceRoot": "projects/backoffice/src",
+      "prefix": "aft-admin",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/backoffice",
+            "index": "projects/backoffice/src/index.html",
+            "main": "projects/backoffice/src/main.ts",
+            "polyfills": "projects/backoffice/src/polyfills.ts",
+            "tsConfig": "projects/backoffice/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/backoffice/src/favicon.ico",
+              "projects/backoffice/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/backoffice/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/backoffice/src/assets/scss"
+              ]
+            },
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/backoffice/src/environments/environment.ts",
+                  "with": "projects/backoffice/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "backoffice:build",
+            "host": "0.0.0.0",
+            "port": 4200,
+            "poll": 1000,
+            "disableHostCheck": true
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "backoffice:build:production"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "main": "projects/backoffice/src/test.ts",
+            "polyfills": "projects/backoffice/src/polyfills.ts",
+            "tsConfig": "projects/backoffice/tsconfig.spec.json",
+            "karmaConfig": "projects/backoffice/karma.conf.js",
+            "scripts": [],
+            "assets": [
+              "projects/backoffice/src/favicon.ico",
+              "projects/backoffice/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/backoffice/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/backoffice/src/assets/scss"
+              ]
+            },
+            "codeCoverageExclude": [
+              "projects/backoffice/src/test.ts"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/backoffice/**/*.ts",
+              "projects/backoffice/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "scouting-portal": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/scouting-portal",
+      "sourceRoot": "projects/scouting-portal/src",
+      "prefix": "aft-scout",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/scouting-portal",
+            "index": "projects/scouting-portal/src/index.html",
+            "main": "projects/scouting-portal/src/main.ts",
+            "polyfills": "projects/scouting-portal/src/polyfills.ts",
+            "tsConfig": "projects/scouting-portal/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/scouting-portal/src/favicon.ico",
+              "projects/scouting-portal/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/scouting-portal/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/scouting-portal/src/assets/scss"
+              ]
+            },
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/scouting-portal/src/environments/environment.ts",
+                  "with": "projects/scouting-portal/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "scouting-portal:build",
+            "host": "0.0.0.0",
+            "port": 4202,
+            "poll": 1000,
+            "disableHostCheck": true
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "scouting-portal:build:production"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "main": "projects/scouting-portal/src/test.ts",
+            "polyfills": "projects/scouting-portal/src/polyfills.ts",
+            "tsConfig": "projects/scouting-portal/tsconfig.spec.json",
+            "karmaConfig": "projects/scouting-portal/karma.conf.js",
+            "scripts": [],
+            "assets": [
+              "projects/scouting-portal/src/favicon.ico",
+              "projects/scouting-portal/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/scouting-portal/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/scouting-portal/src/assets/scss"
+              ]
+            },
+            "codeCoverageExclude": [
+              "projects/scouting-portal/src/test.ts"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/scouting-portal/**/*.ts",
+              "projects/scouting-portal/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "player-portal": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/player-portal",
+      "sourceRoot": "projects/player-portal/src",
+      "prefix": "aft-player",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/player-portal",
+            "index": "projects/player-portal/src/index.html",
+            "main": "projects/player-portal/src/main.ts",
+            "polyfills": "projects/player-portal/src/polyfills.ts",
+            "tsConfig": "projects/player-portal/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/player-portal/src/favicon.ico",
+              "projects/player-portal/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/player-portal/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/scouting-portal/src/assets/scss"
+              ]
+            },
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/player-portal/src/environments/environment.ts",
+                  "with": "projects/player-portal/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "player-portal:build",
+            "host": "0.0.0.0",
+            "port": 4201,
+            "poll": 1000,
+            "disableHostCheck": true
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "player-portal:build:production"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "main": "projects/player-portal/src/test.ts",
+            "polyfills": "projects/player-portal/src/polyfills.ts",
+            "tsConfig": "projects/player-portal/tsconfig.spec.json",
+            "karmaConfig": "projects/player-portal/karma.conf.js",
+            "scripts": [],
+            "assets": [
+              "projects/player-portal/src/favicon.ico",
+              "projects/player-portal/src/assets"
+            ],
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "projects/player-portal/src/styles.scss"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/player-portal/src/assets/scss"
+              ]
+            },
+            "codeCoverageExclude": [
+              "projects/player-portal/src/test.ts"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/player-portal/**/*.ts",
+              "projects/player-portal/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "aft-core": {
+      "projectType": "library",
+      "root": "projects/aft-core",
+      "sourceRoot": "projects/aft-core/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/aft-core/tsconfig.lib.json",
+            "project": "projects/aft-core/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/aft-core/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "main": "projects/aft-core/src/test.ts",
+            "tsConfig": "projects/aft-core/tsconfig.spec.json",
+            "karmaConfig": "projects/aft-core/karma.conf.js",
+            "styles": [
+              "projects/aft-core/src/assets/scss/reset.css",
+              "projects/aft-core/src/assets/scss/fonts.css",
+              "projects/aft-core/src/assets/scss/shared.scss",
+              "projects/aft-core/src/assets/scss/materialdesignicons.min.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./projects/backoffice/src/assets/scss"
+              ]
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/aft-core/**/*.ts",
+              "projects/aft-core/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "ui-components": {
+      "projectType": "library",
+      "root": "projects/ui-components",
+      "sourceRoot": "projects/ui-components/src",
+      "prefix": "sw",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ui-components/tsconfig.lib.json",
+            "project": "projects/ui-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ui-components/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ui-components/src/test.ts",
+            "tsConfig": "projects/ui-components/tsconfig.spec.json",
+            "karmaConfig": "projects/ui-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ui-components/**/*.ts",
+              "projects/ui-components/**/*.html"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "backoffice",
+  "cli": {
+    "analytics": false,
+    "defaultCollection": "@angular-eslint/schematics"
+  }
+}

@@ -1,0 +1,107 @@
+
+/* ////////////////////////////// SASS Variables ////////////////////////////// */
+
+/*////////// Colors //////////*/
+
+/*///// General /////*/
+
+/*/ Main Green /*/
+$colorMain: #88B2AD;
+$colorMain_light: #99adab;
+$colorMain_dark: #577e79;
+$colorMain_shadow: rgba(199, 206, 200, 0.418);
+
+/*/ Main Blue /*/
+$colorMainBlue: #002D64;
+$colorMainBlue_light: #476E9F;
+$colorMainBlue_dark: #122c4b;
+$colorMainBlue_shadow: rgba(123, 128, 156, 0.5);
+
+/*/ Main alt /*/
+$colorMainAlt: #33405d;
+$colorMainAlt_light: #415B96;
+$colorMainAlt_dark: #202D4A;
+$colorMainAlt_shadow: rgba(51, 64, 93, 50%);
+
+/*/ Success /*/
+$colorSuccess: #09B46C;
+$colorSuccess_light: #0ACC7B;
+$colorSuccess_dark: #0B935A;
+$colorSuccess_shadow: rgba(9, 180, 108, 50%);
+$colorSuccess_altBkg: #DBFFC7;
+$colorSuccess_altText: #417E20;
+
+/*/ Info /*/
+$colorInfo_altBkg: #E8EDFF;
+$colorInfo_altText: #33405D;
+
+/*/ Warning /*/
+$colorWarning: #FEBD40;
+$colorWarning_light: #FFCB67;
+$colorWarning_dark: #EAA41E;
+$colorWarning_shadow: rgba(254, 189, 64, 50%);
+$colorWarning_altBkg: #FFF5E8;
+$colorWarning_altText: #895E0B;
+
+/*/ Danger /*/
+$colorDanger: #ff4141;
+$colorDanger_light: #ff6868;
+$colorDanger_dark: #EB1212;
+$colorDanger_shadow: rgba(255, 65, 65, 50%);
+$colorDanger_altBkg: #FFE8E8;
+$colorDanger_altText: #A52929;
+
+/*/ Text /*/
+$colorText: #000000;
+$colorTextLight: #7b7b7b;
+$colorTextLight_shadow: rgba(123, 123, 123, 50%);
+$colorTextInverse: white;
+
+/*/ Other /*/
+$colorOutline: #dedede;
+$colorBkg: #fafafa;
+$colorGrey_shadow: rgba(0,0,0,25%);
+
+/*///// Header /////*/
+
+$colorHeaderBkg: white;
+$colorHeaderText: #000000;
+$colorHeaderTextLight: #7b7b7b;
+$colorHeaderHover: #f1f1f1;
+$colorHeaderSearchBkg: #f1f1f1;
+$colorHeaderOutline: rgba(0,0,0,25%);
+
+/*////////// Colors Dark mode DM //////////*/
+
+/*/ General /*/
+
+$colorText_dm: white;
+$colorTextLight_dm: rgba(255,255,255,75%);
+$colorTextInverse_dm: white;
+$colorOutline_dm: rgba(255,255,255,25%);
+$colorBkg_dm: #16213a;
+$colorDanger_dm: #ff5656;
+
+/*/ Header dark /*/
+
+$colorHeaderBkg_dm: #33405d;
+$colorHeaderText_dm: white;
+$colorHeaderTextLight_dm: rgba(255,255,255,75%);
+$colorHeaderHover_dm: rgba(255,255,255,10%);
+$colorHeaderSearchBkg_dm: rgba(0,0,0,20%);
+$colorHeaderOutline_dm: rgba(255,255,255,25%);
+
+/*////////// Measurements //////////*/
+
+$containerWidthS: 100%;
+$containerWidthM: 632px;
+$containerWidthL: 1232px;
+
+$containerGutter: 1rem;
+
+/*////////// Media Queries //////////*/
+/* Media queries should always be used with max-width. */
+
+$mediaqueryS: 767px;
+$mediaqueryM: 991px;
+$mediaqueryL: 1199px;

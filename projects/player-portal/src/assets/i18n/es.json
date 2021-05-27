@@ -1,0 +1,49 @@
+{
+  "GENERAL": {
+    "AFTER90": "After 90",
+    "CREATE": "Crear",
+    "EDIT": "Editar",
+    "DELETE": "Borrar",
+    "SAVE": "Guardar",
+    "BACK": "Atrás",
+    "CANCEL": "Cancelar",
+    "TITLES": {
+      "SUCCESS": "Éxito",
+      "INFO": "Información",
+      "WARNING": "Advertencia",
+      "ERROR": "Error"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "Acceder",
+    "EMAIL": "Email",
+    "SUBMIT_BUTTON": "Acceder",
+    "PASSWORD": "Password",
+    "REMEMBER_ME": "Recordarme",
+    "FORGOT_PASSWORD": "Olvidé mi contraseña?",
+    "EXAMPLE": "ejemplo@email.com",
+    "EMAIL_REQUIRED": "Email es requerido.",
+    "EMAIL_WRONG_FORMAT": "Formato de email inválido.",
+    "PASSWORD_REQUIRED": "El password es requerido.",
+    "TOAST": {
+      "INFO": {
+        "TITLE": "Datos inválidos",
+        "MESSAGE": "Por favor, arregle los campos marcados con errores antes de acceder."
+      },
+      "ERROR": {
+        "TITLE": "Acceso fallido",
+        "MESSAGE": "Email/Password no válidos, por favor, intente otra vez."
+      }
+    }
+  },
+  "FOOTER": {
+    "POWERED_BY": "Powered by",
+    "COPYRIGHT": "© 2021 After 90. Todos los derechos reservados.",
+    "HOME": "Inicio",
+    "HELP": "Centro de ayuda",
+    "TERMS": "Términos y condiciones",
+    "PRIVACY": "Privacidad",
+    "STATUS": "Estatus de servicios",
+    "CONTACT": "Contacto"
+  }
+}

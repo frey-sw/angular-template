@@ -1,0 +1,32 @@
+{
+  "name": "sw-ui-components",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/animations": "~11.2.11",
+    "@angular/cdk": "~11.2.12",
+    "@angular/common": "~11.2.11",
+    "@angular/core": "~11.2.11",
+    "@angular/forms": "~11.2.11",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
+    "rxjs": "~6.6.0",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.3.2"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "private": true,
+  "engines": {
+    "node": "15.14.0",
+    "yarn": ">= 1.19.1"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "yarn"
+  }
+}

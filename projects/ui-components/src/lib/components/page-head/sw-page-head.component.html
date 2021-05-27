@@ -1,0 +1,27 @@
+<div class="pageHead" [ngClass]="{ pageHead_fixed: fixed }">
+  <div class="pageHeadContainer">
+    <div class="pageHeadRow">
+      <div class="pageHeadStartCol">
+        <div *ngIf="icon" class="pageHeadIcon">
+          <i class="mdi {{ icon }}"></i>
+          <button *ngIf="editIconLabel" (click)="editIcon()" class="button pageHeadIcon__btn" title="{{ editIconLabel }}"><i class="mdi mdi-pencil"></i></button>
+        </div>
+        <div class="pageHeadTitleCont" *ngIf="title || subtitle">
+          <span class="pageHeadSubtitle">
+            <i *ngIf="subtitleIcon" class="mdi {{ subtitleIcon }}"></i>
+            {{ subtitle }}
+          </span>
+          <h2 class="pageHeadTitle">{{ title }}</h2>
+          <div *ngIf="inputLabel">
+            <label for="pageHeadInput" class="srOnly">{{ inputLabel }}</label>
+            <input [formControl]="inputFormControl" type="text" id="pageHeadInput" placeholder="{{ inputLabel }}" class="input pageHeadInput" pInputText />
+          </div>
+        </div>
+      </div>
+      <div class="pageHeadEndCol">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="fixed" class="pageHeadFixedPadding" [ngClass]="{'pageHeadFixedPadding_input': inputLabel}"></div>

@@ -1,0 +1,131 @@
+
+@import "variables";
+
+/* ////////// Container ////////// */
+
+.pageHead {
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid $colorOutline;
+  background-color: white;
+}
+
+/* ////////// Fixed ////////// */
+
+.pageHead_fixed.pageHead {
+  position: fixed;
+  z-index: 900;
+}
+
+.pageHeadFixedPadding {
+  padding-top: 6rem;
+}
+
+/* ////////// Grid ////////// */
+
+.pageHeadContainer {
+  width: 100%;
+  max-width: $containerWidthL;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.pageHeadRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 4rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+/* ////////// Start ////////// */
+
+.pageHeadStartCol {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  padding: 0 1rem;
+  max-width: 100%;
+}
+
+.pageHeadIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 3rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  border-radius: 1000px;
+  color: white;
+  background-color: $colorMainAlt;
+}
+.pageHeadIcon__btn {
+  position: absolute;
+  top: -.5rem;
+  left: -.5rem;
+  padding: .25rem;
+}
+
+.pageHeadTitleCont {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+.pageHeadSubtitle {
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .75rem;
+  color: $colorTextLight;
+}
+.pageHeadTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+:host ::ng-deep .p-inputtext.pageHeadInput {
+  position: relative;
+  left: -.5rem;
+  padding: .375rem .5rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* ////////// End ////////// */
+
+.pageHeadEndCol {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  padding: .5rem 1rem;
+}
+.pageHeadEndCol:empty { display: none; }
+
+/* ////////// Responsive ////////// */
+
+@media screen and (max-width: $mediaqueryS) {
+	.pageHeadFixedPadding {
+    padding-top: 8.375rem;
+  }
+  .pageHeadFixedPadding_input {
+    padding-top: 9rem;
+  }
+
+  .pageHeadStartCol {
+    width: 100%;
+  }
+  .pageHeadTitleCont {
+    width: calc(100% - 3.5rem);
+  }
+
+  .pageHeadEndCol {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem 1rem 0 1rem;
+  }
+}

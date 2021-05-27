@@ -1,0 +1,94 @@
+{
+  "name": "after-90-workspace",
+  "version": "0.0.1",
+  "scripts": {
+    "ng": "ng",
+
+    "prestart-backoffice": "yarn install",
+    "prestart-scouting": "yarn install",
+    "prestart-player": "yarn install",
+
+    "start-backoffice": "ng serve backoffice",
+    "start-scouting": "ng serve scouting-portal",
+    "start-player": "ng serve player-portal",
+
+    "build-backoffice": "ng build backoffice",
+    "build-scouting": "ng build scouting-portal",
+    "build-player": "ng build player-portal",
+
+    "test-backoffice": "ng test backoffice",
+    "test-scouting": "ng test scouting-portal",
+    "test-player": "ng test player-portal",
+
+    "lint": "ng lint --force",
+
+    "analyze": "ng build --prod --stats-json && webpack-bundle-analyzer ./dist/backoffice/stats-es2015.json"
+  },
+  "dependencies": {
+    "@angular/animations": "~11.2.11",
+    "@angular/cdk": "~11.2.12",
+    "@angular/common": "~11.2.11",
+    "@angular/compiler": "~11.2.11",
+    "@angular/core": "~11.2.11",
+    "@angular/forms": "~11.2.11",
+    "@angular/platform-browser": "~11.2.11",
+    "@angular/platform-browser-dynamic": "~11.2.11",
+    "@angular/router": "~11.2.11",
+    "@ngx-translate/core": "^13.0.0",
+    "@ngx-translate/http-loader": "^6.0.0",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.3.2",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.0.0",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "zone.js": "~0.11.3"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.1102.12",
+    "@angular-eslint/builder": "4.3.0",
+    "@angular-eslint/eslint-plugin": "4.3.0",
+    "@angular-eslint/eslint-plugin-template": "4.3.0",
+    "@angular-eslint/schematics": "4.3.0",
+    "@angular-eslint/template-parser": "4.3.0",
+    "@angular/cli": "~11.2.10",
+    "@angular/compiler-cli": "~11.2.11",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "4.16.1",
+    "@typescript-eslint/parser": "4.16.1",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jasmine": "^4.1.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.1.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.5.0",
+    "ng-packagr": "^11.0.0",
+    "prettier": "^2.3.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "typescript": "~4.1.5"
+  },
+  "workspaces": [
+    "projects/*"
+  ],
+  "pre-commit": [
+    "lint"
+  ],
+  "private": true,
+  "engines": {
+    "node": "15.14.0",
+    "yarn": ">= 1.19.1"
+  },
+  "author": {
+    "email": "frey@switch.com.uy",
+    "name": "Fabian Rey"
+  }
+}

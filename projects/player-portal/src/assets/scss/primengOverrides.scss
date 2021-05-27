@@ -1,0 +1,195 @@
+/* ////////////////////////////// PrimeNG Style Overrides ////////////////////////////// */
+
+@import "variables.scss";
+
+/* //////////////////// Input //////////////////// */
+
+.p-inputtext {
+  width: 100%;
+  border: 1px solid $colorOutline;
+  border-radius: 6px;
+  font-family: Ubuntu, sans-serif;
+  color: $colorText;
+}
+
+.p-inputtext:enabled:hover {
+  border-color: $colorOutline;
+}
+.p-inputtext:enabled:focus {
+  box-shadow: 0 0 0 0.2rem $colorMain_shadow;
+  border-color: $colorMain;
+}
+
+.p-inputtext.ng-dirty.ng-invalid {
+  border-color: $colorDanger;
+}
+
+.p-error {
+  color: $colorDanger;
+}
+
+/* ////////// Icon right ////////// */
+
+.p-input-icon-right > .p-inputtext {
+  padding-right: 2.5rem;
+}
+.p-input-icon-right > i:last-of-type {
+  right: 0.75rem;
+}
+
+/* //////////////////// Textarea //////////////////// */
+
+textarea.p-inputtext {
+  resize: vertical;
+}
+
+/* //////////////////// Password //////////////////// */
+
+.p-password {
+  width: 100%;
+}
+
+/* //////////////////// Select //////////////////// */
+
+.p-dropdown {
+  width: 100%;
+  border: 1px solid $colorOutline;
+  border-radius: 6px;
+  font-family: Ubuntu, sans-serif;
+  color: $colorText;
+}
+.p-dropdown-trigger-icon {
+  font-size: .875rem;
+}
+
+.p-dropdown:not(.p-disabled):hover {
+  border-color: $colorOutline;
+}
+.p-dropdown:not(.p-disabled).p-focus {
+  box-shadow: 0 0 0 0.2rem $colorMain_shadow;
+  border-color: $colorMain;
+}
+
+.p-dropdown-panel {
+  border-radius: 8px;
+  font-family: Ubuntu, sans-serif;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+  color: $colorText;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+  color: $colorTextInverse;
+  background: $colorMain;
+}
+
+/* //////////////////// Checkbox //////////////////// */
+
+.p-checkbox {
+  .p-checkbox-box {
+  border: 2px solid $colorOutline;
+  border-radius: 4px;
+  }
+  .p-checkbox-box.p-highlight {
+    border-color: $colorMain;
+    background: $colorMain;
+  }
+  &:not(.p-checkbox-disabled) .p-checkbox-box.p-focus {
+    box-shadow: 0 0 0 3px $colorMain_shadow;
+    border-color: $colorMain;
+  }
+  &:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+    border-color: $colorMain;
+  }
+  &:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: $colorMain;
+    background: $colorMain;
+  }
+}
+
+/* //////////////////// Radio //////////////////// */
+
+.p-radiobutton .p-radiobutton-box {
+  border: 2px solid $colorOutline;
+}
+
+.p-radiobutton .p-radiobutton-box.p-highlight {
+  border-width: 5px;
+  border-color: $colorMain;
+  background: $colorMain;
+}
+
+.p-radiobutton .p-radiobutton-box:not(.p-disabled).p-focus {
+  box-shadow: 0 0 0 3px $colorMain_shadow;
+  border-color: $colorMain;
+}
+
+.p-radiobutton .p-radiobutton-box .p-radiobutton-icon {
+  width: 10px;
+  height: 10px;
+}
+
+/* //////////////////// Accordion //////////////////// */
+
+.p-accordion p-accordiontab .p-accordion-tab {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  font-family: Ubuntu, sans-serif;
+  background-color: white;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+  padding: .75rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: $colorText;
+}
+.p-accordion .p-accordion-header:not(.p-disabled) .p-accordion-header-link:focus {
+  box-shadow: 0 0 0 3px $colorMain_shadow;
+}
+.p-accordion p-accordiontab .p-accordion-header .p-accordion-header-link,
+.p-accordion p-accordiontab:first-child .p-accordion-header .p-accordion-header-link,
+.p-accordion p-accordiontab:last-child .p-accordion-header:not(.p-highlight) .p-accordion-header-link {
+  border-radius: 8px;
+}
+
+.p-accordion .p-accordion-header:not(.p-disabled).p-highlight:hover .p-accordion-header-link,
+.p-accordion .p-accordion-header:not(.p-highlight):not(.p-disabled):hover .p-accordion-header-link {
+  border: none;
+  background: transparent;
+  color: $colorText;
+}
+
+.p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+  width: 1rem;
+  font-size: .75rem;
+}
+.p-accordion-header-text {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.p-accordion p-accordiontab .p-accordion-content {
+  border: none;
+  background: transparent;
+}
+
+/* //////////////////// Calendar //////////////////// */
+
+.p-calendar .p-datepicker {
+  border-radius: 8px;
+  font-family: Ubuntu, sans-serif;
+}
+
+.p-datepicker table td.p-datepicker-today > span {
+  background: transparent;
+  border-color: $colorMain;
+}
+
+.p-datepicker table td > span.p-highlight {
+  color: white;
+  background: $colorMain;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, .1);
+}

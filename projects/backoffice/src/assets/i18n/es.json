@@ -1,0 +1,99 @@
+{
+  "GENERAL": {
+    "AFTER90": "After 90",
+    "CREATE": "Crear",
+    "EDIT": "Editar",
+    "DELETE": "Borrar",
+    "SAVE": "Guardar",
+    "BACK": "Atrás",
+    "CANCEL": "Cancelar",
+    "TITLES": {
+      "SUCCESS": "Éxito",
+      "INFO": "Información",
+      "WARNING": "Advertencia",
+      "ERROR": "Error"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "Ingreso al portal",
+    "EMAIL": "Email",
+    "SUBMIT_BUTTON": "Ingresar",
+    "PASSWORD": "Contraseña",
+    "REMEMBER_ME": "Recordarme",
+    "FORGOT_PASSWORD": "Olvidé mi contraseña?",
+    "EXAMPLE": "ejemplo@email.com",
+    "EMAIL_REQUIRED": "Email es requerido.",
+    "EMAIL_WRONG_FORMAT": "Formato de email inválido.",
+    "PASSWORD_REQUIRED": "La contraseña es requerida.",
+    "TOAST": {
+      "INFO": {
+        "TITLE": "Datos inválidos",
+        "MESSAGE": "Por favor, arregle los campos marcados con errores antes de acceder."
+      },
+      "ERROR": {
+        "TITLE": "Acceso fallido",
+        "MESSAGE": "Email/Password no válidos, por favor, intente otra vez."
+      },
+      "EMPTY": {
+        "TITLE": "Datos Incorrectos",
+        "MESSAGE": "Para continuar, por favor, ingrese Email y Password"
+      }
+    }
+  },
+  "FORGOT": {
+    "TITLE": "Recuperar contraseña",
+    "EMAIL": "Email",
+    "SEND_EMAIL": "Enviar email",
+    "LOGIN": "Volver al Ingreso",
+    "EXAMPLE": "ejemplo@email.com",
+    "EMAIL_REQUIRED": "Email es requerido.",
+    "EMAIL_WRONG_FORMAT": "Formato de email inválido.",
+    "TOAST": {
+      "INFO": {
+        "TITLE": "Datos inválidos",
+        "MESSAGE": "Por favor, arregle los campos marcados con errores antes de acceder."
+      },
+      "ERROR": {
+        "TITLE": "Acceso fallido",
+        "MESSAGE": "Email no válidos, por favor, intente otra vez."
+      },
+      "SUCCESS": {
+        "TITLE": "Correo enviado exitósamente",
+        "MESSAGE": "Revisa tu casilla de correo para más instrucciones."
+      }
+    }
+  },
+  "RESET": {
+    "TITLE": "Restablece tu contraseña",
+    "NEW_PASSWORD": "Nueva contraseña",
+    "NEW_PASSWORD_REPEAT": "Repetir nueva contraseña",
+    "SUBMIT_BUTTON": "Cambiar contraseña",
+    "NEW_PASSWORD_REQUIRED": "Nueva contraseña es requerido",
+    "NEW_PASSWORD_REPEAT_REQUIRED": "Repetir nueva contraseña es requerido",
+    "TOAST": {
+      "PASSWORD_ERROR": {
+        "TITLE": "Las contraseñas no coinciden",
+        "MESSAGE": "La nueva contraseña y la contraseña repetida son diferentes."
+      },
+      "ERROR": {
+        "TITLE": "Error reestableciendo la contraseña",
+        "MESSAGE": "Hubo un error al reestablecer tu contraseña, intenta de nuevo."
+      },
+      "REQUIRED_ERROR": {
+        "TITLE": "Datos Incorrectos",
+        "MESSAGE": "Para continuar ingresa y repite la contraseña."
+      }
+    }
+  },
+  "FOOTER": {
+    "POWERED_BY": "Powered by",
+    "ABOUT_US": "Acerca de Power90",
+    "COPYRIGHT": "© 2021 After 90. Todos los derechos reservados.",
+    "HOME": "Inicio",
+    "HELP": "Centro de ayuda",
+    "TERMS": "Términos y condiciones",
+    "PRIVACY": "Política de Privacidad",
+    "STATUS": "Estatus de servicios",
+    "CONTACT": "Contacto"
+  }
+}
