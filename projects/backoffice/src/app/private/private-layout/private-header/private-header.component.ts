@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { generateFullPrivateModuleRoute, PRIVATE_MODULE_ROUTES } from '../../private.routes';
 import { Router } from '@angular/router';
-import { AuthService } from '@aft-core';
+import { AuthService } from '@app-core';
 
 @Component({
-  selector: 'aft-scout-private-header',
+  selector: 'app-back-private-header',
   templateUrl: './private-header.component.html',
   styleUrls: ['./private-header.component.scss'],
 })

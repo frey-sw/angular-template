@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PrivateHeaderComponent } from './private-header.component';
-import { AuthService, SharedTestModule } from '@aft-core';
+import { AuthService, SharedTestModule } from '@app-core';
 import { Router } from '@angular/router';
 
 describe('PrivateHeaderComponent', () => {

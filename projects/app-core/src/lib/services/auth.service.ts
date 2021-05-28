@@ -28,13 +28,6 @@ export class AuthService {
     );
   }
 
-  loginScouting(loginRequest: ILoginRequest) {
-    return this._apiService.post(ApiTypeEnum.LOGIN, 'sessions/scouting', loginRequest).subscribe(
-      (response: ILoginResponse) => this._handleLoginResponse(response),
-      error => this._handleLoginError()
-    );
-  }
-
   autoLogin(): void {
     const hasToken = !!this._tokenService.getToken();
     if (hasToken) {

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PrivateGuard } from '@aft-core';
+import { PrivateGuard } from '@app-core';
 
 import { HomeComponent } from './private-layout/home/home.component';
 import { ProfileComponent } from './private-layout/profile/profile.component';
