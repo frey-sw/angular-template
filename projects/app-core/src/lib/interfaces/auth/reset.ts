@@ -11,6 +11,5 @@ export interface IResetResponse {
 export interface IResetRequest {
   password: string;
   confirmPassword: string;
-  email: string;
   token: string;
 }

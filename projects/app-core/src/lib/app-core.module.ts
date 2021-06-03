@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AppConfigService, ApiService, AuthService, TokenService } from './services';
+import { UiComponentsModule } from '@sw-ui-components';
+
+import { AppConfigService, ApiService, AuthService, TokenService, LoadingService } from './services';
 import { AppFileConfig, IAppFileConfig } from './interfaces';
-import { TokenInterceptor } from './interceptors';
+import { HttpRequestInterceptor, TokenInterceptor } from './interceptors';
 
 // Initialize Config service
 export function initializeConfigService(appConfigService: AppConfigService) {
@@ -16,9 +18,14 @@ export function initializeConfigService(appConfigService: AppConfigService) {
 
 @NgModule({
   declarations: [],
-  imports: [HttpClientModule, TranslateModule],
+  imports: [HttpClientModule, TranslateModule, UiComponentsModule],
   exports: [HttpClientModule, CommonModule, TranslateModule],
-  providers: [AuthService, TokenService, { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
+  providers: [
+    AuthService,
+    TokenService,
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true },
+  ],
 })
 export class AppCoreModule {
   static forRoot(appConfig: IAppFileConfig): ModuleWithProviders<any> {
@@ -37,6 +44,7 @@ export class AppCoreModule {
           multi: true,
         },
         ApiService,
+        LoadingService,
       ],
     };
   }
