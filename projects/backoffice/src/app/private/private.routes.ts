@@ -15,5 +15,5 @@ export const generatePrivateModuleRoute = (route: string): Array<string> => {
 };
 
 export const generateFullPrivateModuleRoute = (route: string): Array<string> => {
-  return [...APP_ROUTES.HOME, ...generatePrivateModuleRoute(route)];
+  return [...APP_ROUTES.PRIVATE, ...generatePrivateModuleRoute(route)];
 };

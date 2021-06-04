@@ -5,7 +5,7 @@ import { APP_ROUTES } from '@app-core';
 export const PUBLIC_MODULE_ROUTES = {
   LOGIN: '',
   FORGOT_PASSWORD: 'forgot',
-  RESET_PASSWORD: 'reset/:token/:email',
+  RESET_PASSWORD: 'reset/:token',
 };
 
 export const generatePublicModuleRoute = (route: string): Array<string> => {

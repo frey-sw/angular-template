@@ -10,6 +10,7 @@ import { AppCoreModule, IAppFileConfig, PrivateGuard, PublicGuard } from '@app-c
 import { AppRoutingModule } from './app-routing.module';
 import { InitComponent } from './init.component';
 import { environment } from '../environments/environment';
+import { AppLoaderComponent } from './components/app-loader/app-loader.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -21,7 +22,7 @@ const appConfigServiceConfig: IAppFileConfig = {
 };
 
 @NgModule({
-  declarations: [InitComponent],
+  declarations: [InitComponent, AppLoaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

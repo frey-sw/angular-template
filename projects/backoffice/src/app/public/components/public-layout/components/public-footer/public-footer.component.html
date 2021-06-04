@@ -1,0 +1,22 @@
+<footer class="footer_public">
+  <div>
+    <nav>
+      <button class="footerBtn">{{ 'FOOTER.PRIVATE' | translate }}</button>
+      <button class="footerBtn">{{ 'FOOTER.ABOUT_US' | translate }}</button>
+      <button class="footerBtn">{{ 'FOOTER.TERMS' | translate }}</button>
+      <button class="footerBtn">{{ 'FOOTER.PRIVACY' | translate }}</button>
+      <button class="footerBtn">{{ 'FOOTER.HELP' | translate }}</button>
+      <!-- <button class="footerBtn">{{ 'FOOTER.STATUS' | translate }}</button>
+      <button class="footerBtn">{{ 'FOOTER.CONTACT' | translate }}</button> -->
+    </nav>
+  </div>
+  <div>
+    <nav>
+      <button class="footerBtn" (click)="changeLanguage(LANGUAGES_ENUM.ES)">{{ 'LANGUAGES.ES' | translate }}</button>
+      <button class="footerBtn" (click)="changeLanguage(LANGUAGES_ENUM.EN)">{{ 'LANGUAGES.EN' | translate }}</button>
+    </nav>
+  </div>
+  <div>
+    <small class="footerCopyright">{{ 'FOOTER.COPYRIGHT' | translate }}</small>
+  </div>
+</footer>
