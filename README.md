@@ -1,7 +1,5 @@
-# After 90
-Angular workspace used to work with After90 projects
-It contains 2 libraries and 3 web projects
-
+# Angular Template
+Angular template workspace
 
 # Configuration
 Create the `.env` file for each project, placed on the assets folder of the 3 web platforms (backoffice, scouting-portal, player-portal).
