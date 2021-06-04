@@ -621,7 +621,8 @@ h6 {
 /* ////////// Big ////////// */
 
 .button_big {
-  padding: 0.75rem 1rem;
+  max-height: 45px;
+  min-height: 45px;
   font-size: 1.125rem;
   font-weight: bold;
 }
@@ -767,6 +768,7 @@ button.button.button_link {
   background-color: white;
   box-shadow: 0 3px 16px rgba(0, 0, 0, 0.1);
 }
+
 .authCard {
   width: calc(100% - 3rem);
   max-width: 360px;
@@ -777,7 +779,9 @@ button.button.button_link {
   margin: 0;
   padding: 1.5rem;
   border-bottom: 1px solid $colorOutline;
+  font-size: 24px;
 }
+
 .authCardLogo {
   display: block;
   max-width: 100%;

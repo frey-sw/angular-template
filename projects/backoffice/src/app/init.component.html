@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+
+<!-- Toasts -->
+<sw-overlay-elements></sw-overlay-elements>
+
+<!-- Loading Indicator for http requests -->
+<ng-container *ngIf="isAppLoading">
+  <app-admin-app-loader></app-admin-app-loader>
+</ng-container>
