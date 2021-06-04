@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 import { ApiService, SharedTestModule } from '@app-core';
 import { HttpTestingController } from '@angular/common/http/testing';
 
-import { ApiTypeEnum } from '../enums/apiType.enum';
+import { API_TYPE_ENUM } from '../enums/api-type.enum';
 import { fakeEndpointUrls } from '../../test/mocks/app-config.service.mock';
 
 describe('Api Service', () => {
@@ -27,7 +27,7 @@ describe('Api Service', () => {
     it('When calling a GET request, it should call the Http client its the given params', () => {
       const response = { response: true };
 
-      service.get(ApiTypeEnum.LOGIN, fakeUrl).subscribe(res => {
+      service.get(API_TYPE_ENUM.IDENTITY, fakeUrl).subscribe(res => {
         expect(res).toBe(response);
       });
 
@@ -43,7 +43,7 @@ describe('Api Service', () => {
       const body = { body: 'test' };
       const response = { response: true };
 
-      service.post(ApiTypeEnum.LOGIN, fakeUrl, body).subscribe(res => {
+      service.post(API_TYPE_ENUM.IDENTITY, fakeUrl, body).subscribe(res => {
         expect(res).toBe(response);
       });
 
@@ -58,7 +58,7 @@ describe('Api Service', () => {
       const body = { body: 'test' };
       const response = { response: true };
 
-      service.put(ApiTypeEnum.LOGIN, fakeUrl, body).subscribe(res => {
+      service.put(API_TYPE_ENUM.IDENTITY, fakeUrl, body).subscribe(res => {
         expect(res).toBe(response);
       });
 
@@ -74,7 +74,7 @@ describe('Api Service', () => {
       const body = { body: 'test' };
       const response = { response: true };
 
-      service.post(ApiTypeEnum.LOGIN, fakeUrl, body).subscribe(res => {
+      service.post(API_TYPE_ENUM.IDENTITY, fakeUrl, body).subscribe(res => {
         expect(res).toBe(response);
       });
 
@@ -90,7 +90,7 @@ describe('Api Service', () => {
       const body = { body: 'test' };
       const response = { response: true };
 
-      service.delete(ApiTypeEnum.LOGIN, fakeUrl).subscribe(res => {
+      service.delete(API_TYPE_ENUM.IDENTITY, fakeUrl).subscribe(res => {
         expect(res).toBe(response);
       });
 

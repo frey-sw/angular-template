@@ -25,7 +25,7 @@ export class LoginComponent {
       password: ['', Validators.required],
     });
 
-    this._authService.hasChangedPassword.subscribe(show => {
+    this._authService.hasChangedPassword$.subscribe(show => {
       this.showResetPasswordMessage = show;
     });
   }

@@ -39,6 +39,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
+                "./projects/backoffice/src/",
                 "./projects/backoffice/src/assets/scss"
               ]
             },
@@ -114,6 +115,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
+                "./projects/backoffice/src/",
                 "./projects/backoffice/src/assets/scss"
               ]
             },

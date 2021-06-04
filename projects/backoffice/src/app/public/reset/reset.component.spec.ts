@@ -89,7 +89,6 @@ describe('ResetComponent', () => {
         const userInput: IResetRequest = {
           password: userPassword,
           confirmPassword: userPassword,
-          email,
           token,
         };
 

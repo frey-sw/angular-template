@@ -20,3 +20,6 @@ export * from './lib/app.routes';
 
 // Test
 export * from './test/index';
+
+// Enums
+export * from './lib/enums';

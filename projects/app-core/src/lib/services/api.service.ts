@@ -4,7 +4,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
 import { AppConfigService } from './app-config.service';
-import { ApiTypeEnum } from '../enums/apiType.enum';
+import { API_TYPE_ENUM } from '../enums/api-type.enum';
 
 @Injectable()
 export class ApiService {
@@ -31,7 +31,7 @@ export class ApiService {
   }
 
   private _buildApiUrl(path: string, apiType: string) {
-    const apiTypes = Object.values(ApiTypeEnum);
+    const apiTypes = Object.values(API_TYPE_ENUM);
     const typeExists = apiTypes.find(element => element === apiType);
 
     if (!typeExists) {
