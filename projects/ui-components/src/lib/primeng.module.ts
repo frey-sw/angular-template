@@ -17,6 +17,7 @@ import { OrderListModule } from 'primeng/orderlist';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { ToastModule } from 'primeng/toast';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @NgModule({
   declarations: [],
@@ -38,6 +39,7 @@ import { ToastModule } from 'primeng/toast';
     OverlayPanelModule,
     RadioButtonModule,
     ToastModule,
+    ProgressSpinnerModule,
   ],
   exports: [
     FormsModule,
@@ -57,6 +59,7 @@ import { ToastModule } from 'primeng/toast';
     OverlayPanelModule,
     RadioButtonModule,
     ToastModule,
+    ProgressSpinnerModule,
   ],
   providers: [],
 })

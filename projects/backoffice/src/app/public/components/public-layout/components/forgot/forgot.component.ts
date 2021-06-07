@@ -37,7 +37,7 @@ export class ForgotComponent {
   onSubmit() {
     if (this.form.valid) {
       const formValues = this.form.value;
-      this._authService.sendForgotEmail({ email: formValues.email, language: this._translateService.currentLang });
+      this._authService.sendForgotEmail({ email: formValues.email, clientUri: `${window.location.origin}/reset/` });
     }
   }
 
