@@ -8,7 +8,9 @@
   ],
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": [
+        "*.ts"
+      ],
       "parserOptions": {
         "project": [
           "projects/client/tsconfig.app.json",
@@ -22,10 +24,6 @@
         "plugin:prettier/recommended"
       ],
       "rules": {
-        /**
-         * Any TypeScript source code (NOT TEMPLATE) related rules you wish to use/reconfigure over and above the
-         * recommended set provided by the @angular-eslint project would go here.
-         */
         "@typescript-eslint/naming-convention": [
           "error",
           {
@@ -36,63 +34,98 @@
             "leadingUnderscore": "allow",
             "trailingUnderscore": "forbid"
           },
-          { "selector": "class", "format": ["PascalCase"] },
-          { "selector": "enum", "format": ["UPPER_CASE"] }
+          {
+            "selector": "class",
+            "format": [
+              "PascalCase"
+            ]
+          },
+          {
+            "selector": "enum",
+            "format": [
+              "UPPER_CASE"
+            ]
+          }
         ],
-        "import/no-cycle":  "error",
+        "import/no-cycle": "error",
         "import/no-self-import": "error",
         "camelcase": "error",
-        "max-lines": ["error", 130],
+        "max-lines": [
+          "error",
+          130
+        ],
         "max-classes-per-file": "off",
         "@typescript-eslint/lines-between-class-members": [
-          "error", "always",
-          { "exceptAfterSingleLine": true }
+          "error",
+          "always",
+          {
+            "exceptAfterSingleLine": true
+          }
         ],
         "lines-between-class-members": [
-          "error", "always",
-          { "exceptAfterSingleLine": true }
+          "error",
+          "always",
+          {
+            "exceptAfterSingleLine": true
+          }
         ],
         "import/prefer-default-export": "off",
         "class-methods-use-this": "off",
         "import/no-extraneous-dependencies": [
           "warn",
-          { "devDependencies": ["**/*.test.ts", "**/*.test.tsx"]}
+          {
+            "devDependencies": [
+              "**/*.test.ts",
+              "**/*.test.tsx"
+            ]
+          }
         ],
         "no-unused-expressions": "error",
         "no-underscore-dangle": "off",
         "@angular-eslint/directive-selector": [
           "error",
-          { "type": "attribute", "prefix": "cad", "style": "camelCase" }
+          {
+            "type": "attribute",
+            "prefix": "cad",
+            "style": "camelCase"
+          }
         ],
         "@angular-eslint/component-selector": [
           "error",
-          { "type": "element", "prefix": "cad", "style": "kebab-case" }
+          {
+            "type": "element",
+            "prefix": "cad",
+            "style": "kebab-case"
+          }
         ]
       }
     },
     {
-      "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
-      "rules": {
-        /**
-         * Any template/HTML related rules you wish to use/reconfigure over and above the
-         * recommended set provided by the @angular-eslint project would go here.
-         */
-      }
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
     },
     {
       "files": [
-        "src/**/*.spec.ts", "src/**/*.d.ts"
+        "src/**/*.spec.ts",
+        "src/**/*.d.ts"
       ],
       "parserOptions": {
         "project": "./src/tsconfig.spec.json"
       },
-      // Jasmine rules
-      "extends": ["plugin:jasmine/recommended"],
-      // Plugin to run Jasmine rules
-      "plugins": ["jasmine"],
-      "env": { "jasmine": true },
-      // Turn off 'no-unused-vars' rule
+      "extends": [
+        "plugin:jasmine/recommended"
+      ],
+      "plugins": [
+        "jasmine"
+      ],
+      "env": {
+        "jasmine": true
+      },
       "rules": {
         "@typescript-eslint/no-unused-vars": "off"
       }

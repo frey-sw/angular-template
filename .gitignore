@@ -32,6 +32,7 @@ speed-measure-plugin*.json
 .history/*
 
 # misc
+/.angular/cache
 /.sass-cache
 /connect.lock
 /coverage
@@ -46,3 +47,6 @@ testem.log
 Thumbs.db
 
 **/.env
+/projects/backoffice/node_modules/
+/projects/app-core/node_modules/
+/projects/ui-components/node_modules/
