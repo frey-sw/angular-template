@@ -16,6 +16,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { OrderListModule } from 'primeng/orderlist';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { ToastModule } from 'primeng/toast';
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ToastModule } from 'primeng/toast';
     OverlayPanelModule,
     RadioButtonModule,
     ToastModule,
+    ProgressSpinnerModule,
   ],
   exports: [
     FormsModule,
@@ -57,6 +59,7 @@ import { ToastModule } from 'primeng/toast';
     OverlayPanelModule,
     RadioButtonModule,
     ToastModule,
+    ProgressSpinnerModule,
   ],
   providers: [],
 })
